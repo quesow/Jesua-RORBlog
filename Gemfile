@@ -8,7 +8,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'high_voltage'
-gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 group :development, :test do
@@ -21,4 +20,8 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
