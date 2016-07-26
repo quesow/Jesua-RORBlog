@@ -1,3 +1,7 @@
 Jesua - ROR Blog
 ================
 Just anothe blog, based on Ruby on Rails
+
+Heroku deploy:
+
+https://jesua-rorblog.herokuapp.com/
