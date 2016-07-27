@@ -4,4 +4,4 @@ Just anothe blog, based on Ruby on Rails
 
 Heroku deploy:
 
-https://jesua-rorblog.herokuapp.com/
+https://thawing-anchorage-69297.herokuapp.com/
