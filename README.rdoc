@@ -1,6 +1,6 @@
 Jesua - ROR Blog
 ================
-Just anothe blog, based on Ruby on Rails
+Just another blog, based on Ruby on Rails
 
 Heroku deploy:
 
