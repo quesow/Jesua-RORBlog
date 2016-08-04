@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem "font-awesome-rails"
 gem 'autoprefixer-rails'
+gem 'haml-rails'
 group :development, :test do
   gem 'spring'
   gem 'byebug'
@@ -18,7 +19,6 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'better_errors'
   gem 'quiet_assets'
-  gem 'rails_layout'
   gem 'sqlite3'
 end
 group :production do
