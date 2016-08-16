@@ -9,11 +9,12 @@
   %tbody
     - @posts.each do |post|
       %tr
-        %td= post.name
+        %td= post.user.nil? ? "Anonymous" : post.user.name
         %td= post.title
         %td= post.content
         %td= link_to 'Show', post, class: 'btn btn-warning'
-        %td= link_to 'Edit', edit_post_path(post), class: 'btn btn-primary'
-        %td= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
+        -if !post.user.nil? && post.user.id == current_user.id
+          %td= link_to 'Edit', edit_post_path(post), class: 'btn btn-primary'
+          %td= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
 %br/
 = link_to 'New Post', new_post_path, class: 'btn btn-success btn-lg'
