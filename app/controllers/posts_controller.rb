@@ -19,6 +19,13 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+      @post = Post.find(params[:id])
+      if @post.user.nil? || current_user.id != @post.user.id
+          respond_to do |format|
+            format.html { redirect_to posts_url, alert: "You don't have permissions to edit this post." }
+            format.json { head :no_content }
+          end
+      end
   end
 
   # POST /posts
