@@ -1,6 +1,12 @@
+$red: #C52F24;
+
+.red{
+  color: $red;
+}
+
 .navbar{
   border-radius: 0px !important;
-  background-color: #C52F24 !important;
+  background-color: $red !important;
   .navbar-brand{
     color: white !important;
   }

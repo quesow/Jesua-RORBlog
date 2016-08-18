@@ -12,6 +12,7 @@ gem "font-awesome-rails"
 gem 'autoprefixer-rails'
 gem 'haml-rails'
 gem 'devise'
+gem 'jquery-datatables-rails', '~> 3.3.0'
 group :development, :test do
   gem 'spring'
   gem 'byebug'
