@@ -18,9 +18,9 @@
             %td= post.title
             %td.hidden-xs= post.content
             %td
-              = link_to 'Show', post, class: 'btn btn-warning'
+              = link_to '', post, class: 'btn btn-warning fa fa-2x fa-eye', title: 'Show'
               -if !post.user.nil? && post.user.id == current_user.id
-                = link_to 'Edit', edit_post_path(post), class: 'btn btn-primary'
-                = link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
+                = link_to '', edit_post_path(post), class: 'btn btn-primary fa fa-2x fa-edit', title: 'Edit'
+                = link_to '', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger fa fa-2x fa-close', title: 'Destroy'
     %br/
-    = link_to 'New Post', new_post_path, class: 'btn btn-success btn-lg'
+    = link_to 'New Post', new_post_path, class: 'btn btn-success btn-lg btn-block'

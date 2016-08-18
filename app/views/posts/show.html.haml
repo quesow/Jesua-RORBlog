@@ -6,6 +6,9 @@
   %strong Content:
   = @post.content
 
+%p.lead
+  %strong Author
+  = @post.user.name
 
 -if !@post.user.nil? && @post.user.id == current_user.id
   = link_to 'Edit', edit_post_path(@post), class: 'btn btn-lg btn-primary'
