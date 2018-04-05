@@ -1,7 +1,3 @@
 Jesua - ROR Blog
 ================
 Just another blog, based on Ruby on Rails
-
-Heroku deploy:
-
-https://thawing-anchorage-69297.herokuapp.com/
