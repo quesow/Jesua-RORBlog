@@ -1,3 +1,6 @@
 Jesua - ROR Blog
 ================
 Just another blog, based on Ruby on Rails
+
+See this app live on Heroku!
+https://intense-tor-70153.herokuapp.com
